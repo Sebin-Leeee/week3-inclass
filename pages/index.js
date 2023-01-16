@@ -80,12 +80,12 @@ export default function Home() {
          </div>
 
 
-        <div>Computing Degrees: 
+       <div>Computing Degrees: 
         {
           information && information.map((info, index) => {
             if(info.department === "Computing"){
             return(
-              <div key ={index}>{info.degree}</div>
+              <Card key ={index} degree = {info.degree} colour = "blue" font = "30px"/>
             )
             }
           })
